@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function About() {
   return (
     <div className="bg-white w-full max-h-screen text-black">
@@ -14,11 +15,12 @@ export default function About() {
       >
         About
       </button>
-      <img
+      <Image
         className="absolute top-24 right-14 w-96 h-96 rounded"
         src="https://images.pexels.com/photos/11572733/pexels-photo-11572733.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         alt="Image"
-      />
+        width={384}
+        height={400} />
     </div>
   );
 }
